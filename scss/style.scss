@@ -1,0 +1,170 @@
+@import url("/fonts/style.css");
+
+@mixin large-text {
+    font-family:"PF Din Text Universal", sans-serif; 
+    line-height: 40px;
+    font-size: 28px;
+    color: #333333;
+    text-align: center;
+}
+
+@mixin small-text {
+    font-family:"PF Din Text Universal", sans-serif; 
+    line-height: 21px;
+    font-size: 16px;
+    color: #000000;
+}
+
+@mixin green_button {
+    width: 208px;
+    height: 45px;
+    background: #00B596;
+    border-radius: 3px;
+    font-family:"PF Din Text Universal", sans-serif; 
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    display: block;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: url("/img/bg_header.jpg")center center/ cover no-repeat;
+    min-height: 857px;
+    
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo_picture {
+    height:75px ;
+    width: 333px;
+    margin-top: 68px;
+    margin-left: 82px;
+    margin-bottom: 30px;
+}
+
+.header_info{
+    display: flex;
+    justify-content: space-between;
+
+    .bonus_info {
+        @include large-text;
+
+        h2{
+        margin-bottom: 18px;
+        }
+
+        span {
+            text-transform:uppercase;
+        }
+        img {
+            min-width: 484px;
+            min-height: 151px;
+        }
+    }
+    .window {
+        min-width :380px;
+        min-height:615px;
+        background-color: #fff; 
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        padding-left: 20px;
+
+        .SRButton {
+            width: 180px;
+            height: 48px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 19px;
+            line-height: 24px;
+            color:#009E82;
+            border: none;
+            background-color: #fff;
+            position: relative;
+            padding: 0;
+
+            
+
+            &::after {
+                content: "";
+                width: 180px;
+                height: 2px;
+                position: absolute;
+                background: #05c2a2;
+                bottom: 10px;
+                left: 0px;
+ 
+            }
+        }
+        .input_field {
+            width: 80%;
+            height: 70px;
+            padding-left: 5px;
+            margin: 0 auto;
+            margin-left: 15px;
+            margin-bottom: 18px;
+            border: 1px solid rgb(133, 133, 133);
+            border-radius: 3px;
+            font-size: 17px;
+        }
+        
+        label{
+            @include small-text;
+            display: block;
+            margin-bottom: 20px;
+            margin-left: 15px;
+        }
+
+        hr{
+            width: 98%;
+            color:rgba(29, 25, 25, 0.253);
+            margin-bottom: 15px;
+            
+        }
+
+        .green_btn{
+            @include green_button ;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        p{
+            @include small-text;
+            margin-left: 15px;
+            text-align: center;
+        }
+
+        .header_links {
+            display: flex;
+            justify-content: space-around;
+            
+
+            .header_icon {
+                width: 42px;
+                height: 42px; 
+                background: #BEBEBE; 
+                border-radius: 5px;
+                margin-bottom: 45px;
+                
+                i{
+                    font-size: 28px;
+                    color: #fff;
+                    margin-left: 4px;
+                    margin-top: 6px;
+
+                 
+                }
+                
+            }
+
+        }
+
+    }
+}
