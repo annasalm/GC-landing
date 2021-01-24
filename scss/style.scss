@@ -167,4 +167,117 @@ header {
         }
 
     }
+}  
+
+.bonus_descr{
+    h2{
+        @include large-text;
+        margin: 0 auto;
+        margin-top: 70px;
+        font-size: 36px;
+
+    }
+    &_text{
+        @include small-text;
+        text-align: center;
+        margin-top: 44px;
+        line-height: 26px;
+    }
+
+    &_reviews  {
+        @include small-text;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        line-height: 28px;
+        font-size: 18px;
+        font-weight: 600;
+
+        .coment{
+            position: relative;
+        }
+
+        .coment h3::before {
+            content: '';
+            position: absolute;
+            top:20px;
+            left:-50px;
+            display: block;
+            background: url('/img/“.svg');
+            width: 36px;
+            height: 29px;
+        }
+
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+    }
+    .green_btn {
+        @include green_button;
+        margin: 0 auto;
+        margin-top: 57px;
+        margin-bottom: 100px;
+    }
+}
+
+.bonus_advantages {
+    background: url("/img/bg-advantages.jpg") center center/ cover no-repeat;
+    min-height: 1000px;
+
+    h2{
+        @include large-text;
+        padding-top: 70px;
+        font-size: 36px;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .advantage_blocs {
+        display:flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        margin-top: 62px;
+        max-width: 950px;
+        
+        div{
+            width: 225px;
+            height: 225px;
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            margin-right: 41px;
+            margin-bottom: 41px;
+            p{
+                @include small-text;
+            }
+        }
+    }
+    .pluses_block {
+        display: flex;
+        justify-content: space-between;
+        @include small-text;
+        font-size: 20px;
+        position: relative;
+
+        div::before {
+            content: '';
+            position: absolute;
+            top:20px;
+            left:-50px;
+            display: block;
+            background: url('/img/done-2block.svg');
+            width: 36px;
+            height: 29px;
+        }
+    }
+
+    .green_btn {
+        @include green_button;
+        margin-top: 57px;
+        margin-bottom: 100px;
+    }
+    
 }
