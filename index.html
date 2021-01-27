@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonus40% Grand Capital</title>
+    <title>Bonus40 Grand Capital</title>
     <link  rel = "stylesheet" href = "fonts/style.css" type = "text/css">
     <script src="https://kit.fontawesome.com/453edd4a0a.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link rel="stylesheet" href="css/style.min.css">
     
 </head>
@@ -32,32 +33,36 @@
                     <input name="email" type="text" placeholder="e-mail" class="input_field">
                 </form>  
 
-                <label>
-                    <input type="checkbox">
-                    Мне больше 18 лет
-                </label>
 
-                <button class="green_btn">Получить бонус</button>
+                <input type="checkbox" class="custom-checkbox" id="Yearsold" name="Yearsold" value="yes">
+                <label for="Yearsold"> Мне больше 18 лет</label>
+                
+                <button class="green_btn" onclick="document.location='#'">Получить бонус</button>
+           
 
                 <hr>
                 <p>Войти используя аккаунты социальных сетей</p>
                 <div class="header_links">
-                    <div class="header_icon">
-                        <a href="https://vk.com/"><i class="fab fa-vk"></i></a>
-                    </div>
-                    <div class="header_icon">
-                        <a href="https://vk.com/"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                    <div class="header_icon">
-                        <a href="https://vk.com/"><i class="fab fa-odnoklassniki"></i></a>
-                    </div>
-                    <div class="header_icon">
-                        <a href="https://vk.com/"><i class="fab fa-google-plus-g"></i></a>
-                    </div>
-                    <div class="header_icon">
-                        <div href="https://vk.com/"><i class="fas fa-at"></i></a>
-                    </div>
-                    
+                    <a href="https://vk.com/" class="header_icon">
+                       <i class="fab fa-vk"></i>
+                    </a>
+
+                    <a href="https://vk.com/" class="header_icon" >
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://vk.com/" class="header_icon" >
+                        <i class="fab fa-odnoklassniki"></i>
+                    </a>
+
+                    <a href="https://vk.com/" class="header_icon" >
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+
+                    <a href="https://vk.com/" class="header_icon" >
+                        <i class="fas fa-at"></i>
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -98,28 +103,28 @@
         <h2>Преимущества бонуса 40%</h2>
         <div class="advantage_blocs">
             <div>
-                <img src="/img/hand-2block.svg">
-                <p>Бонус 40% можно получать на каждое пополнение средств</p>
+                <img src="img/hand-2block.svg">
+                <p>Бонус 40% можно <br> получать на каждое пополнение средств</p>
             </div>
             <div>
-                <img src="/img/desktop-2block.svg">
-                <p>Прибыль, полученную от торговли бонусом, можно свободно выводить.</p>
+                <img src="img/desktop-2block.svg">
+                <p>Прибыль, полученную <br> от торговли бонусом, <br> можно свободно выводить.</p>
             </div>
             <div>
-                <img src="/img/case1-2block.svg">
+                <img src="img/case1-2block.svg">
                 <p>Со временем бонус переходит в собственность клиента: за 1 лот клиент получает $3</p>
             </div>
             <div>
-                <img src="/img/security-2block.svg">
+                <img src="img/security-2block.svg">
                 <p>Выдерживает просадку</p>
             </div>
             <div>
-                <img src="/img/clock-2block.svg">
+                <img src="img/clock-2block.svg">
                 <p>Бонус можно продлевать каждые 6 месяцев</p>
             </div>
             <div>
-                <img src="/img/purse-2block.svg">
-                <p>Минимальное пополнение от $50</p>
+                <img src="img/purse-2block.svg">
+                <p>Минимальное пополнение <br> от $50</p>
             </div>
         </div>
         <div class="pluses_block">
@@ -131,6 +136,54 @@
 
     </div>
 </section>
+<section class="three_steps">
+    <div class="container">
+        <h2>3 простых шага для получения бонуса </h2>
+        <div class="step_blocs">
+            <div class="step1">
+                <img src="img/1-3block.svg" alt="1">
+                <p>Откройте торговый <br>счет Standard</p>   </div>
+            <div class="step2">
+                <img src="img/2-3block.svg" alt="2">
+                <p>Пополните счет <br> на сумму от $50 </p>
+            </div>
+            <div class="step3">
+                <img src="img/3-3block.svg" alt="3">
+                <p>Отправьте заявку на получение <br> бонуса из Личного кабинета</p>
+            </div>
+        </div>
+        <button class="green_btn">Получить бонус</button>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="risk_information">
+            Уведомление о рисках: начиная работать на валютных рынках, убедитесь, что вы осознаете риски, с которыми 
+            сопряжена торговля с использованием кредитного плеча, и что вы имеете достаточный уровень подготовки. <br>
+            <br>
+
+            Политика конфиденциальности объясняет, каким образом Компания собирает, использует и защищает персональную информацию своих Клиентов<br>
+            <br>
+            Grand Capital Group<br>
+            - GrandCapital Ltd. 24598 IBC 2018 (Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont, Kingstown, St. Vincent and the Grenadines) <br>
+            - Grand Capital Ltd. 036046 (106 Premier Building, Victoria, Mahe, Seychelles)
+        </div>
+        <div class="footer_button">
+            <p>© 2006 — 2018 Grand Capital ltd</p> 
+            <div class="footer_links">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-tumblr"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a> 
+            </div>  
+        </div>
+        
+
+    </div>
+</footer>
 
 </body>
 </html>
